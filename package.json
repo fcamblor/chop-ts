@@ -1,0 +1,41 @@
+{
+  "name": "chop",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest"
+  },
+  "author": "fcamblor <fcamblor@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcamblor/chop-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fcamblor/chop-ts/issues"
+  },
+  "devDependencies": {
+    "@types/jest": "23.3.2",
+    "jest": "23.6.0",
+    "ts-jest": "23.10.3",
+    "typescript": "3.1.1"
+  },
+  "files": [
+    "lib"
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "^.+\\.spec\\.ts$"
+  }
+}
