@@ -37,5 +37,15 @@
       "js"
     ],
     "testRegex": "^.+\\.spec\\.ts$"
+  },
+  "dependencies": {
+    "@types/lodash.clone": "4.5.4",
+    "@types/lodash.defaults": "4.2.4",
+    "@types/lodash.isequal": "4.5.3",
+    "@types/lodash.result": "4.5.4",
+    "lodash.clone": "4.5.0",
+    "lodash.defaults": "4.2.0",
+    "lodash.isequal": "4.5.0",
+    "lodash.result": "4.5.2"
   }
 }
