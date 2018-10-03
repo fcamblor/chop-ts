@@ -4,9 +4,23 @@ describe("chop-model", () => {
     it("typesafe instanciation", () => {
         let model = new Chop.Model({ aString: "str", anInt: 123, anObj: { a: 'a', b: 'b' } });
 
-        let str: string = model.get('aString');
-        let num: number = model.get('anInt');
+        let str = model.get('aString');
+        console.log(str.substring(0));
+
+        let num = model.get('anInt');
+        console.log(num.toFixed(0));
+
         let obj: {a:string, b:string} = model.get('anObj');
+
+        // Doesn't compile : Argument of type "blah" is not assignable to parameter of type "aString" | "anInt" | "anObj"
+        // let blah = model.get('blah');
+
+        // Doesn't compile : Property 'toFixed' does not exist on type 'string'
+        // It proves that we 'keep' JSON typing in our Chop.Model wrapper :-)
+        // console.log(str.toFixed(0));
+
+        // Doesn't compile : "type 'string' is not assignable to type 'number'"
+        // let num2: number = model.get('aString');
 
         console.log(str, num, obj);
     });
