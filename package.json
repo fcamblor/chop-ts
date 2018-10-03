@@ -41,11 +41,19 @@
   "dependencies": {
     "@types/lodash.clone": "4.5.4",
     "@types/lodash.defaults": "4.2.4",
+    "@types/lodash.get": "4.4.4",
     "@types/lodash.isequal": "4.5.3",
+    "@types/lodash.keys": "4.2.4",
+    "@types/lodash.once": "4.1.4",
     "@types/lodash.result": "4.5.4",
+    "@types/lodash.set": "4.3.4",
     "lodash.clone": "4.5.0",
     "lodash.defaults": "4.2.0",
+    "lodash.get": "4.4.2",
     "lodash.isequal": "4.5.0",
-    "lodash.result": "4.5.2"
+    "lodash.keys": "4.2.0",
+    "lodash.once": "4.1.1",
+    "lodash.result": "4.5.2",
+    "lodash.set": "4.3.2"
   }
 }
